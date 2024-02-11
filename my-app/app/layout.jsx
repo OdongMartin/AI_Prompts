@@ -1,5 +1,8 @@
 import '@styles/globals.css';
 
+import Nav from '@components/Nav';
+import Prvoider from '@components/Provider';
+
 export const metadata = {
     title: "Prompts",
     description: "Discover & Share AI prompts"
@@ -13,7 +16,8 @@ const RooLayout = ({children}) => {
         </div>
 
         <main className="app">
-            {children}
+          <Nav />
+          {children}
         </main>
     </html>
   )
