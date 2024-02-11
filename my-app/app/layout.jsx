@@ -4,7 +4,7 @@ import Nav from '@components/Nav';
 import Prvoider from '@components/Provider';
 
 export const metadata = {
-    title: "Prompts",
+    title: "AI Prompts",
     description: "Discover & Share AI prompts"
 }
 
