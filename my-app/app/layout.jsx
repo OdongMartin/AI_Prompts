@@ -1,7 +1,7 @@
 import '@styles/globals.css';
 
 import Nav from '@components/Nav';
-import Prvoider from '@components/Provider';
+import Provider from '@components/Provider';
 
 export const metadata = {
     title: "AI Prompts",
@@ -11,14 +11,18 @@ export const metadata = {
 const RooLayout = ({children}) => {
   return (
     <html lang="en">
-        <div className="main">
-            <div className="gradient"/>
-        </div>
+      <body>
+        <Provider>
+          <div className="main">
+              <div className="gradient"/>
+          </div>
 
-        <main className="app">
-          <Nav />
-          {children}
-        </main>
+          <main className="app">
+            <Nav />
+            {children}
+          </main>
+        </Provider>
+      </body>
     </html>
   )
 }
