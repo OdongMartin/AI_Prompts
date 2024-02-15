@@ -6,6 +6,9 @@ import User from "@models/user";
 /* console.log(           
      {clientId: process.env.GOOGLE_ID,
     clientSecret: process.env.GOOGLE_CLIENT_SECRET}) */
+
+    
+
 const handler = NextAuth({
     providers:[
         GoogleProvider({
@@ -24,6 +27,7 @@ const handler = NextAuth({
             return session;
         },
         async signIn({ profile }) {
+            console.log("profile:" + JSON.stringify(profile));
             try {
                 await connectToDB();
     
@@ -32,7 +36,7 @@ const handler = NextAuth({
                 if(!userExists){
                     await User.create({
                         email: profile.email,
-                        username: profile.email.replace(" ", "").toLowerCase(),
+                        username: profile.name.replace(" ", "").toLowerCase(),
                         image: profile.picture
                     })
                 }
