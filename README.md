@@ -1,2 +1,2 @@
 ﻿# AI_Prompt
-Create & discover AI prompts.
+Create & discover AI prompts
