@@ -1,2 +1,2 @@
 ﻿# AI Prompts
-Create & discover AI prompts
+Create & discover AI prompts. Nextjs
