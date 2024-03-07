@@ -1,2 +1,2 @@
 ﻿# AI Prompts
-Create & discover AI prompts. Nextjs
+Create & discover AI prompts. Nextjs tailwindCSS 
